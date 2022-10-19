@@ -1,0 +1,340 @@
+@font-face {
+    font-family: century-regular;
+    src: url('../Fonts/Century_Gothic_Font_Family/Century\ Gothic\ 400.ttf');
+}
+@font-face {
+    font-family: century-bold;
+    src: url('../Fonts/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf');
+}
+@font-face {
+    font-family: segoe;
+    src: url('../Fonts/segoe-script/segoesc.ttf');
+}
+@font-face {
+    font-family: bebas;
+    src: url('../Fonts/bebas/Bebas-Regular.ttf');
+}
+@font-face {
+    font-family: newsgoth;
+    src: url('../Fonts/newsgoth_bt/NewsGothicBT.ttf');
+}
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.header-bg{
+    background-image: url('../Home/Header.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+}
+.header{
+    display: flex;
+    height: 11vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 9vw;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+}
+hr{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-top: none;
+}
+.nav-bold{
+    font-family: century-bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.nav{
+    font-family: century-regular;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.nav:hover{
+    cursor: pointer;
+    font-family: century-bold;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+.nav-bold:hover{
+    cursor: pointer;
+    font-family: century-bold;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+.dropdown{
+    float: left;
+    display: hidden;
+}
+.subMenu{
+    width: 10vw;
+    display: none;
+    position: absolute;
+}
+.subMenu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: century-regular;
+    width: 12vw;
+    background-color: lightpink;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    margin-left: -4vw;
+}
+.dropdown:hover .subMenu{
+    display: block;
+    z-index: 1;
+}
+.subMenu a:hover{
+    background-color: crimson;
+    color: white;
+    font-family: century-bold;
+    transition-duration: 0.5s;
+}
+.top-border{
+    border: solid 1px lightpink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0.7vw;
+}
+.border{
+    border: solid 1px lightpink;
+}
+.bottom-border{
+    border: solid 1px lightpink;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../Home/Tiles.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.card-title{
+    font-family: bebas;
+    font-size: 8vw;
+    margin-top: 3vw;
+}
+.content{
+    display: flex;
+}
+.content-wrap{
+    display: flex;
+}
+.content-card{
+    display: flex;
+    background-color: white;
+    border-radius: 3vw;
+    border: solid 0.1vw;
+    margin: 3vw;
+    width: 85vw;
+}
+.content-card:hover{
+    transition-duration: 0.3s;
+    background-color: rgb(247, 240, 176);
+}
+.content-img{
+    height: 30vw;
+    border-top-left-radius: 3vw;
+    border-bottom-left-radius: 3vw;
+}
+.content-desc{
+    display: flex;
+    flex-direction: column;
+    margin: 2vw;
+}
+.content-title{
+    font-family: century-bold;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+}
+.content-text{
+    font-family: century-regular;
+    font-size: 1.5vw;
+}
+.bold{
+    font-family: century-bold;
+    font-size: 2vw;
+    margin-top: 1vw;
+}
+.validation{
+    border-radius: 5vw;
+    background-color: lightgreen;
+    border: solid 1px green;
+    height: 2vw;
+    width: 18vw;
+    align-items: bottom;
+    margin-top: 8vw;
+    margin-bottom: -2vw;
+    padding-top: 0.5vw;
+}
+.validation-card{
+    font-family: century-regular;
+    font-size: 1.3vw;
+    text-align: center;
+    margin: 0;
+}
+.button{
+    height: 8vw;
+    margin-top: 11.7vw;
+    margin-left: -13.7vw;
+}
+.button:hover{
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+.arrow{
+    height: 6vw;
+    margin-left: 85vw;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+.arrow:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.footer{
+    display: flex;
+    background-image: url('../Home/Header.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+    justify-content: space-between;
+}
+.footer-logo{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    height: 5vw;
+}
+.copyrights{
+    font-family: century-regular;
+    font-size: 1.2vw;
+    color: white;
+    margin-top: 1.2vw;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5vw;
+    margin-right: 2vw;
+}
+.connect{
+    font-family: century-bold;
+    font-size: 1.5vw;
+    color: white;
+}
+.connect-logo{
+    display: flex;
+    margin-top: 1vw;
+}
+.icon{
+    text-decoration: none;
+    height: 3.5vw;
+    padding: 0.2vw
+}
+@media screen and (max-width: 500px){
+    .navbar{
+        font-size: 3vw;
+    }
+    .main-title{
+        font-size: 6vw;
+    } 
+    .desc-title{
+        font-size: 5vw;
+    }
+    .subMenu a{
+        width: 18vw;
+        margin-left: -5vw;
+    }
+    .card-title{
+        font-size: 10vw;
+    }
+    .content-card{
+        flex-direction: column;
+        width: 80vw;
+    }
+    .content-title{
+        font-size: 7vw;
+    }
+    .content-text{
+        font-size: 4.5vw;
+    }
+    .bold{
+        font-size: 5vw;
+        text-align: center;
+        margin-top: 3vw;
+    }
+    .content-img{
+        width: 80vw;
+        height: 100%;
+        border-top-left-radius: 3vw;
+        border-top-right-radius: 3vw;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .content-desc{
+        margin-left: 3vw;
+    }
+    .button{
+        height: 10vw;
+        margin-top: 68vw;
+        margin-left: -16.7vw;
+    }
+    .button .pad{
+        margin-top: 66vw;
+    }
+    .validation{
+        height: 4vw;
+        width: 37vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .validation-card{
+        font-size: 3vw;
+    }
+    .connect{
+        font-size: 2.2vw;
+    }
+    .icon{
+        height: 5vw;
+    }
+}

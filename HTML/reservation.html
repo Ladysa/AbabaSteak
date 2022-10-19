@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ababa Steak</title>
+    <link rel="stylesheet" href="../CSS/style-reservation.css">
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../JS/reservation.js"></script>
+</head>
+<body>
+    <div class="header-bg">
+        <div class="header">
+            <div class="logo">
+                <img class="logo" src="../Home/Header-logo.png" alt="">
+            </div> 
+        </div>
+        <hr>
+        <div class="navbar">
+            <a class="nav" href="index.html">
+                HOME
+            </a>
+            <div class="nav dropdown">
+                MENU
+                <div class="subMenu">
+                    <a class="top-border" href="menu.html">All Menu</a>
+                    <a class="border" href="menu.html">Beef</a>
+                    <a class="border"  href="menu-chicken.html">Chicken</a>
+                    <a class="border" href="menu-lamb.html">Lamb</a>
+                    <a class="border" href="menu-side-dishes.html">Side Dishes</a>
+                    <a class="bottom-border" href="menu-drinks.html">Drinks</a>
+                </div>
+            </div>
+            <a class="nav" href="promo.html">
+                PROMO
+            </a>
+            <a class="nav" href="aboutus.html">
+                ABOUT US
+            </a>
+            <a class="nav-bold" href="reservation.html">
+                RESERVATION
+            </a>
+        </div>
+        <hr>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="card">
+                <div class="title">
+                    RESERVATION FORM
+                </div>
+                <div class="content">
+                    <form onsubmit="return validateForm()" action="" method="get" name="reservationForm">
+                        <div class="user-form">
+                            <div class="input-box">
+                                <div class="details">Full Name</div>
+                                <input type="text" placeholder="Enter your name" id="name" onkeyup="nameValidation()">
+                                <div class="invalidtext" id ="invalidtext_name"></div> 
+                            </div>
+                         
+                            <div class="input-box">
+                                <div class="details">Phone Number</div>
+                                <input type="text" placeholder="Enter your phone number" id="number" onkeyup="phoneNumberValidation()">
+                                <div class="invalidtext" id ="invalidtext_number"></div> 
+                            </div>
+                
+                            <div class="input-box">
+                                <div class="details">Number of Seats</div>
+                                <input type="text" placeholder="Enter the number of seats" id="seat" onkeyup="seatNumberValidation()">
+                                <div class="invalidtext" id="invalidtext_seat"></div>
+                            </div>
+                
+                            <div class="input-box">
+                                <div class="details">Date & Time</div>
+                                <input type="datetime-local" id="datetime" min="">
+                                <div class="invalidtext" id="invalidtext_datetime"></div>
+                            </div>
+
+                            <div class="input-box">
+                                <div class="details">Coupon Code</div>
+                                <input type="text" placeholder="Enter your coupon code" id="code" onkeyup="codeValidation()">
+                                <div class="invalidtext" id="invalidtext_code"></div>
+                            </div>
+                
+                        </div>
+                        <div class="submit-button">
+                            <input type="submit" value="Reserve">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="footer">
+        <div class="footer-left">
+            <img class="footer-logo" src="../Home/Logo-text.png" alt="">
+            <div class="copyrights">
+                Copyrights 2021 AbabaSteak - All Rights reserved
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="connect">
+                Connect With Us
+            </div>
+            <div class="connect-logo">
+                <a class="icon" href="https://www.instagram.com/">
+                    <img class="icon" src="../Home/instagram.png" alt="">
+                </a>
+                <a class="icon" href="https://www.facebook.com/">
+                    <img class="icon" src="../Home/facebook.png" alt="">
+                </a>
+                <a class="icon" href="https://www.twitter.com/">
+                    <img class="icon" src="../Home/twitter.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

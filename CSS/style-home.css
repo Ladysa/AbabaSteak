@@ -1,0 +1,400 @@
+@font-face {
+    font-family: century-regular;
+    src: url('../Fonts/Century_Gothic_Font_Family/Century\ Gothic\ 400.ttf');
+}
+@font-face {
+    font-family: century-bold;
+    src: url('../Fonts/911Fonts.com_CenturyGothicBold__-_911fonts.com_fonts_pMgo.ttf');
+}
+@font-face {
+    font-family: segoe;
+    src: url('../Fonts/segoe-script/segoesc.ttf');
+}
+@font-face {
+    font-family: bebas;
+    src: url('../Fonts/bebas/Bebas-Regular.ttf');
+}
+@font-face {
+    font-family: newsgoth;
+    src: url('../Fonts/newsgoth_bt/NewsGothicBT.ttf');
+}
+*{
+    margin: 0;
+    padding: 0
+}
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+.header-bg{
+    background-image: url('../Home/Header.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+}
+.header{
+    display: flex;
+    height: 11vw;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    height: 9vw;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.5vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+}
+hr{
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-top: none;
+}
+.nav-bold{
+    font-family: century-bold;
+    text-decoration: none;
+    color: white;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.nav{
+    font-family: century-regular;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.nav:hover{
+    cursor: pointer;
+    font-family: century-bold;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+.nav-bold:hover{
+    cursor: pointer;
+    font-family: century-bold;
+    transform: scale(1.1);
+    transition-duration: 0.2s;
+}
+.dropdown{
+    float: left;
+    display: hidden;
+}
+.subMenu{
+    width: 10vw;
+    display: none;
+    position: absolute;
+}
+.subMenu a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: century-regular;
+    width: 12vw;
+    background-color: lightpink;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    margin-left: -4vw;
+}
+.dropdown:hover .subMenu{
+    display: block;
+    z-index: 1;
+}
+.subMenu a:hover{
+    background-color: crimson;
+    color: white;
+    font-family: century-bold;
+    transition-duration: 0.5s;
+}
+.top-border{
+    border: solid 1px lightpink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 0.7vw;
+}
+.border{
+    border: solid 1px lightpink;
+}
+.bottom-border{
+    border: solid 1px lightpink;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.banner{
+    height: 28.3vw;
+    padding: 0;
+    margin: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../Home/Tiles.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+}
+.main-title{
+    font-family: bebas;
+    font-size: 4vw;
+    margin-bottom: 2vw;
+    margin-top: 8vw;
+}
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.offer-slider{
+    display: flex;
+    flex-direction: row;
+}
+.slide-frame{
+    width: 85vw;
+    height: 33vw;
+    overflow: hidden;
+}
+.slide-in{
+    width: 300vw;
+}
+.slide-page{
+    width: 85vw;
+    height: 33vw;
+    float: left;
+}
+.slide-page img{
+    width: 100%;
+    height: 100%;
+}
+.slider-in img.active{
+    display: inline-block;
+}
+.prev,.next{
+    cursor: pointer;
+    height: 7vw;
+    margin-top: 12vw;
+}
+.prev{
+    position: relative;
+    margin-right: 1vw;
+}
+.next{
+    position: relative;
+    margin-left: 1vw;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    width: 85vw;
+    margin-bottom: 6vw;
+    background-color: white;
+    border: black;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 20px;
+}
+.card:hover{
+    background-color: rgb(230, 230, 230);
+    transition-duration: 0.5s;
+}
+.card-img{
+    width: 37vw;
+    height: 100%;
+    position: relative;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.desc{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.3vw;
+    margin-left: 3vw;
+    margin-right: 0.5vw;
+    margin-bottom: 1vw;
+}
+.desc-title{
+    display: flex;
+    font-family: century-bold;
+    font-size: 3vw;
+}
+.chef{
+    height: 5vw;
+    margin-left: 0.5vw
+}
+.desc-content{
+    font-family: century-regular;
+}
+.desc-content-1{
+    font-size: 1.8vw;
+    margin-top: 1.5vw;
+}
+.desc-content-2{
+    margin-top: 2vw;
+    margin-bottom: 1.2vw;
+}
+.menu-button{
+    height: 4.2vw;
+    border-radius: 30px;
+}
+.menu-button:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+.desc-content-a{
+    font-size: 1.5vw;
+    margin-left: 25vw;
+}
+.desc-content-b{
+    font-size: 1.5vw;
+    margin-left: 17vw;
+}
+.desc-content-c{
+    font-size: 1.5vw;
+    margin-left: 20vw;
+}
+.main-menu{
+    display: flex;
+    justify-content: center;
+}
+.main-menu-button{
+    display: flex;
+    height: 7.5vw;
+    margin-bottom: 6vw;
+}
+.main-menu-button:hover{
+    transform: scale(1.05);
+    transition-duration: 0.3s;
+}
+.arrow{
+    height: 6vw;
+    margin-left: 85vw;
+    margin-top: -1vw;
+    margin-bottom: 3vw;
+}
+.arrow:hover{
+    transform: scale(1.1);
+    transition-duration: 0.3s;
+}
+.footer{
+    display: flex;
+    background-image: url('../Home/Header.jpg');
+    background-position: top;
+    background-size: cover;
+    background-position: relative;
+    justify-content: space-between;
+}
+.footer-logo{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    height: 5vw;
+}
+.copyrights{
+    font-family: century-regular;
+    font-size: 1.2vw;
+    color: white;
+    margin-top: 1.2vw;
+    margin-left: 2vw;
+    margin-bottom: 0.5vw;
+}
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5vw;
+    margin-right: 2vw;
+}
+.connect{
+    font-family: century-bold;
+    font-size: 1.5vw;
+    color: white;
+}
+.connect-logo{
+    display: flex;
+    margin-top: 1vw;
+}
+.icon{
+    text-decoration: none;
+    height: 3.5vw;
+    padding: 0.2vw
+}
+@media screen and (max-width: 500px){
+    .navbar{
+        font-size: 3vw;
+    }
+    .main-title{
+        font-size: 6vw;
+    } 
+    .desc-title{
+        font-size: 5vw;
+    }
+    .subMenu a{
+        width: 18vw;
+        margin-left: -5vw;
+    }
+    .chef{
+        margin-left: 0.5vw;
+        height: 8vw;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 85vw;
+        margin-bottom: 6vw;
+        background-color: white;
+        border: black;
+        border-style: solid;
+        border-width: 0.1vw;
+        align-items: left;
+        border-radius: 20px;
+    }
+    .card-img{
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .desc{
+        margin-left: 5vw;
+        margin-right: 2vw;
+    }
+    .desc-content-1{
+        font-size: 3.5vw;
+        margin-top: 2vw;
+    }
+    .desc-content-2{
+        margin-top: 2vw;
+        margin-bottom: 1.2vw;
+    }
+    .menu-button{
+        height: 8vw;
+    }
+    .desc-content-3{
+        font-size: 3vw;
+        text-align: right;
+        margin-bottom: 1vw;
+    }
+    .connect{
+        font-size: 2.2vw;
+    }
+    .icon{
+        height: 5vw;
+    }
+
+}
